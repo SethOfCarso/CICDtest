@@ -11,20 +11,22 @@ test("Obtener listado de usuarios" , async ()=>{
     expect(Array.isArray(resp.body)).toBe(true)
 })
 
-describe("ver listado de usuario por mail" , () =>{
+// describe("ver listado de usuario por mail" , () =>{
 
-    test("Que si funciona regresando un email" , ()  =>{
-        request(app)
-        .get("/users/Oscar@hot.com")
-        .expect(200)
-    })
+//     test("Que si funciona regresando un email" , ()  =>{
+//         request(app)
+//         .get("/users/Oscar@hot.com")
+//         .expect(200)
+//     })
 
-    test("Que no regrese el corre" , () =>{
-        const resp = request(app)
-        .get("/users/Oscar1@hotm.com")
-        .expect(404)
+//     test("Que no regrese el corre" , () =>{
+//         const resp = request(app)
+//         .get("/users/Oscar1@hotm.com")
+//         .expect(404)
         
-        console.log(resp.body);
-        // expect(resp.body.error).toBe("no existe")
-    })
-})
+//         console.log(resp.body);
+//         // expect(resp.body.error).toBe("no existe")
+//         //Esto es un cambio
+
+//     })
+// })
