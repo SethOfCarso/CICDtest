@@ -26,5 +26,7 @@ describe("ver listado de usuario por mail" , () =>{
         
         console.log(resp.body);
         // expect(resp.body.error).toBe("no existe")
+        //Esto es un cambio
+        
     })
 })
